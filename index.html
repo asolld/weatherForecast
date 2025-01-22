@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogoda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weatheru</h1>
+        <a href="#">Погода</a>
+        <a href="#">Новости</a>
+        <a href="#">Карты</a>
+        <a href="#">Приложения</a>
+    </header>
+
+    <main>
+        <div id="inputAndButton">
+            <input type="text" id="cityInput" placeholder="Введите город для поиска" autocomplete="off" autocorrect="off">
+            <button type="button" id="getWeatherData">Поиск</button>
+        </div>
+
+        <div id="nowAndTodayButton">
+            <button type="button" class="toggleButton active">Сейчас</button>
+            <button type="button" class="toggleButton">Сегодня</button>
+        </div>
+
+        <p id="weatherToday">Погода сегодня:</p>
+
+        <div class="container">
+            <p id="temperaturePar">
+                <span class="label">Температура:</span>
+                <img src="images/free-icon-temperature-4114833.png" alt="Температура">
+            </p>
+            <p id="humidityPar">
+                <span class="label">Влажность:</span>
+                <img src="images/free-icon-water-4814304.png" alt="Влажность">
+            </p>
+            <p id="windSpeedPar">
+                <span class="label">Скорость ветра:</span>
+                <img src="images/free-icon-wind-4814263.png" alt="Скорость ветра">
+            </p>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
